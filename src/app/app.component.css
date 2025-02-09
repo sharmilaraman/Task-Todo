@@ -1,0 +1,49 @@
+.main-container {
+     display: flex;
+     .side-nav {
+          padding: 0;
+          margin: 0;
+       width: 350px;
+       min-width: 230px;
+       min-height: calc(100vh - 70px);
+       background-color: #113c60;
+       color: #fff;
+       box-shadow: 5px 5px 5px #939393;
+       @media only screen and (max-width: 1300px) {
+         width: 100px;
+         min-width: 100px;
+       }
+     }
+     .main {
+       padding: 30px;
+     }
+   }
+   /* Medium screens */
+@media screen and (max-width: 1300px) {
+  .side-nav {
+    width: 100px;
+    min-width: 100px;
+  }
+}
+
+/* Small screens (tablets) */
+@media screen and (max-width: 768px) {
+  .side-nav {
+    width: 80px;
+    min-width: 80px;
+  }
+  .main {
+    padding: 20px;
+  }
+}
+
+/* Extra small screens (mobile) */
+@media screen and (max-width: 480px) {
+  .side-nav {
+    width: 60px;
+    min-width: 60px;
+  }
+  .main {
+    padding: 15px;
+  }
+}
